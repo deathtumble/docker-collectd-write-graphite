@@ -1,4 +1,4 @@
-Hostname "{{ HOST_NAME }}"
+Hostname "{{ HOSTNAME }}"
 
 FQDNLookup false
 Interval {{ COLLECT_INTERVAL | default("10") }}
@@ -44,7 +44,6 @@ LoadPlugin write_graphite
   MountPoint "/etc/hosts"
   IgnoreSelected true
   ReportByDevice false
-  ReportReserved true
   ReportInodes true
 </Plugin>
 
